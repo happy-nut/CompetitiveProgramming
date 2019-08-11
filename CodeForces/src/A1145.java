@@ -1,6 +1,9 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * https://codeforces.com/contest/1145/problem/A
+ */
 public class A1145 {
 
   private static int answer(long[] ns) {
@@ -21,11 +24,11 @@ public class A1145 {
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
     int n = scan.nextInt();
-
     long[] ns = new long[n];
     for (int i = 0; i < n; i++) {
       ns[i] = scan.nextInt();
     }
+    scan.close();
 
     System.out.println(answer(ns));
   }
